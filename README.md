@@ -8,10 +8,10 @@ This repository is a playground where creativity thrives without boundaries. Her
 
 ## Contents
 
-### [Project Name 1](link/to/project1)
+### [Simple Calculator](https://github.com/Safwanonthego/Mindless-Creations/blob/226cc0480ad1e9257f2d3bd17f329b43cc14832f/Simple_calculator.py)
 _Description of Project 1_
 
-### [Project Name 2](link/to/project2)
+### [Project Name 2](Simple_calculator.py)
 _Description of Project 2_
 
 ### [Project Name 3](link/to/project3)
