@@ -8,14 +8,12 @@ This repository is a playground where creativity thrives without boundaries. Her
 
 ## Contents
 
-### [Simple Calculator](https://github.com/Safwanonthego/Mindless-Creations/blob/226cc0480ad1e9257f2d3bd17f329b43cc14832f/Simple_calculator.py)
-_Description of Project 1_
+### [Simple Calculator](Simple_calculator.py)
+_Simple Calculator with Conversion tool.
+Length(m,ft,yd); Weight(kg,t,lbs); BMI calculator_
 
 ### [Project Name 2](Simple_calculator.py)
 _Description of Project 2_
-
-### [Project Name 3](link/to/project3)
-_Description of Project 3_
 
 Feel free to explore, contribute, or use any part of these projects as inspiration for your own endeavors.
 
