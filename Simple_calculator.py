@@ -24,7 +24,8 @@ elif sys == "CONV":
     conv_category = input("Length/Weight/BMI: ").upper()
     while conv_category not in ["LENGTH", "WEIGHT", "BMI"]:
         conv_category = input("Length/Weight/BMI/: ").upper()
-        
+
+# Length Calculator:      
     if conv_category == "LENGTH":
         x = float(input("Input value: "))
         unit_input = input("Input unit(m,yd,ft): ").lower()
@@ -52,7 +53,8 @@ elif sys == "CONV":
                print(f"{x*.03} Meter")
            else:
                print ("Error")                 
-               
+ 
+# Weight Calculator:
     elif conv_category == "WEIGHT":
         x = float(input("Input value: "))
         unit_input = input("Input unit(kg,t,lbs): ").lower()
@@ -83,7 +85,8 @@ elif sys == "CONV":
                print(f"{x*0.000454} Metric Ton")
            else:
                print ("Error")               
-         
+
+#BMI Calculator:        
     elif conv_category == "BMI":
         H_ft = float(input("Input Height (ft): "))
         H_in = float(input("Input Height (in): "))
@@ -97,4 +100,38 @@ elif sys == "CONV":
         elif bmi < 29.9:
             print(f"BMI: {bmi}.\n Loose some weight!")
         elif bmi > 30:
-            print(f"BMI: {bmi}.\n You are at a risk!")        
+            print(f"BMI: {bmi}.\n You are at a risk!")
+                    
+# Temperature Conversation:          
+    elif conv_category == "Temperature":
+        T = float(input("Input value: "))
+        Unit_Input = input("Input unit(K/C/F): ").upper()
+        if Unit_Input == "C":
+            print("Choose Conversion")
+            Unit_Output = input("(K/F): ").upper()
+            if Unit_Output == "K":
+                conv = T+273.15
+            elif Unit_Output == "F":
+                conv = T*(9/5)+32
+            print (f"Temperature- {conv}°{Unit_Output}")      
+        elif Unit_Input == "K":
+            print("Choose Conversion")
+            Unit_Output = input("(C/F): ").upper()
+            if Unit_Output == "C":
+                conv = T-273.15
+            elif Unit_Output == "F":
+                conv = (T-273.15)*(9/5)+32
+            print (f"Temperature- {conv}°{Unit_Output}")
+    
+        elif Unit_Input == "F":
+            print("Choose Conversion")
+            Unit_Output = input("(K/C): ").upper()
+            if Unit_Output == "K":
+                conv = (T-32)*5/9+273.15
+            elif Unit_Output == "C":
+                conv = (T-32)*5/9
+            print (f"Temperature- {conv}°{Unit_Output}")
+            
+        else:
+            print ("Error")   
+            
